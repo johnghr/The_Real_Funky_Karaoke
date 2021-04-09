@@ -1,8 +1,8 @@
 import unittest
-from tests.test_guests import TestGuests
+from tests.test_guest import TestGuest
 from tests.test_karaoke_bar import TestKaraokeBar
-from tests.test_rooms import TestRooms
-from tests.songs import TestSongs
+from tests.test_room import TestRoom
+from tests.test_song import TestSong
 
-if __name_ == "__main__":
+if __name__ == "__main__":
     unittest.main()
