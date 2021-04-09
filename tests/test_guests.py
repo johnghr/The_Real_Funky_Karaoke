@@ -1,0 +1,3 @@
+class TestGuests(unittest.TestCase):
+
+    

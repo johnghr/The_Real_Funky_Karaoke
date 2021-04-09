@@ -1,0 +1,1 @@
+class TestRooms(unittest.Testcase):

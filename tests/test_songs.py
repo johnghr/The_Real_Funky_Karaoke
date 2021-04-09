@@ -1,0 +1,1 @@
+class TestSongs(unittest.TestCase):

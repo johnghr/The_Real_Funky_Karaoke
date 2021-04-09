@@ -1,0 +1,1 @@
+class TestKaraokeBar(unittest.TestCase):
