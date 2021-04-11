@@ -9,10 +9,10 @@ class TestKaraokeBar(unittest.TestCase):
     def setUp(self):
         self.song = Song("Get Up Offa That Thing")
         self.room = Room("The Real Funky Room")
-        self.guest_1 = Guest("James Brown")
-        self.guest_2 = Guest("Bootsy Collins")
-        self.guest_3 = Guest("Stevie Wonder")
-        self.guest_4 = Guest("George Clinton")
+        self.guest_1 = Guest("James Brown", 50.00)
+        self.guest_2 = Guest("Bootsy Collins", 40.00)
+        self.guest_3 = Guest("Stevie Wonder", 60.00)
+        self.guest_4 = Guest("George Clinton", 70.00)
 
     def test_karaoke_can_check_guest_into_room(self):
         guest_check_in(self.room, self.guest_1)
@@ -35,7 +35,7 @@ class TestKaraokeBar(unittest.TestCase):
         guest_check_in(self.room, self.guest_2)
         guest_check_in(self.room, self.guest_3)
         self.assertEqual(3, len(self.room.guests_and_songs["guest_list"]))
-        self.assertEqual("Sorry cool cats, this Karaoke ain't funky enough for four of you!", guest_check_in(self.room, self.guest_4))
+        self.assertEqual("Sorry cool cats, this Karaoke ain't funky enough for four!", guest_check_in(self.room, self.guest_4))
 
 
    
