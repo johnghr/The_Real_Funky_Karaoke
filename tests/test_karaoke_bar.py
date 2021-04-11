@@ -34,9 +34,8 @@ class TestKaraokeBar(unittest.TestCase):
         guest_check_in(self.room, self.guest_1)
         guest_check_in(self.room, self.guest_2)
         guest_check_in(self.room, self.guest_3)
-        guest_check_in(self.room, self.guest_4)
         self.assertEqual(3, len(self.room.guests_and_songs["guest_list"]))
-
+        self.assertEqual("Sorry cool cats, this Karaoke ain't funky enough for four of you!", guest_check_in(self.room, self.guest_4))
 
 
    
