@@ -72,7 +72,10 @@ class TestKaraokeBar(unittest.TestCase):
         add_multiple_songs_to_playlist(self.room, self.songs)
         self.assertEqual(2, len(self.room.guests_and_songs["playlist"]))
     
-    # def test_guest_in_group_cheers_favorite_song(self):
+   
+
+        
+    
 
         
 

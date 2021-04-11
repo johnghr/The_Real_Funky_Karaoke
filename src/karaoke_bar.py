@@ -27,6 +27,8 @@ def group_booking(room, group):
             return "Sorry cool cats, this Karaoke ain't funky enough for five!"
         else:
             room.guests_and_songs["guest_list"].append(guest)
+
+
             
         
             
