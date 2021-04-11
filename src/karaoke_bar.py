@@ -15,6 +15,9 @@ def add_to_playlist(room, song):
 
 def remove_guest(room, guest):
     room.guests_and_songs["guest_list"].remove(guest)
+
+def charge_entry_fee(guest):
+    guest.wallet -= 5.00
    
     
 

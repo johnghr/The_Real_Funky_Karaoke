@@ -37,5 +37,9 @@ class TestKaraokeBar(unittest.TestCase):
         self.assertEqual(3, len(self.room.guests_and_songs["guest_list"]))
         self.assertEqual("Sorry cool cats, this Karaoke ain't funky enough for four!", guest_check_in(self.room, self.guest_4))
 
+    def test_karaoke_can_charge_entry_fee(self):
+        charge_entry_fee(self.guest_1)
+        self.assertEqual(45.00, self.guest_1.wallet)
+
 
    
