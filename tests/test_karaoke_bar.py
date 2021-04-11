@@ -20,6 +20,10 @@ class TestKaraokeBar(unittest.TestCase):
         self.assertEqual(1, len(self.room.guests_and_songs["playlist"]))
         self.assertEqual("Get Up Offa That Thing", self.room.guests_and_songs["playlist"][0].name)
 
+    def test_karaoke_can_remove_guest(self):
+        guest_check_in(self.room, self.guest)
+        remove_guest(self.room, self.guest)
+        self.assertEqual(0, len(self.room.guests_and_songs["guest_list"]))
 
 
 
