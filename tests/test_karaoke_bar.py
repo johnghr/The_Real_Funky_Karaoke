@@ -9,10 +9,10 @@ class TestKaraokeBar(unittest.TestCase):
     def setUp(self):
         self.song = Song("Get Up Offa That Thing")
         self.room = Room("The Real Funky Room")
-        self.guest_1 = Guest("James Brown", 50.00)
-        self.guest_2 = Guest("Bootsy Collins", 40.00)
-        self.guest_3 = Guest("Stevie Wonder", 60.00)
-        self.guest_4 = Guest("George Clinton", 70.00)
+        self.guest_1 = Guest("James Brown", 50.00, "Can't Stop")
+        self.guest_2 = Guest("Bootsy Collins", 40.00, "All around the world")
+        self.guest_3 = Guest("Stevie Wonder", 60.00, "By the way")
+        self.guest_4 = Guest("George Clinton", 70.00, "Give it away")
 
     def test_karaoke_can_check_guest_into_room(self):
         guest_check_in(self.room, self.guest_1)
