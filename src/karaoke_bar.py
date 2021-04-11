@@ -18,6 +18,10 @@ def remove_guest(room, guest):
 
 def charge_entry_fee(guest):
     guest.wallet -= 5.00
+
+def check_for_favorite_song(room, guest):
+    if room.guests_and_songs["playlist"][0].name == guest.favorite_song:
+        return "Damn thats Funky!"
    
     
 
